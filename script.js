@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const burgerMenu = document.getElementById('burger-menu');
     const navMenu = document.getElementById('nav-menu');
-    const navLinks = document.getElementById('.nav-link');
+    const navLinks = document.querySelectorAll('.nav-link');
 
     // Burger Menu (Responsive)
 
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const backToTopBtn = document.getElementById('back-to-top');
 
     window.addEventListener('scroll', () => {
-        if (window.scroll > 400) {
+        if (window.scrollY > 400) {
             backToTopBtn.classList.add('show');
         } else {
             backToTopBtn.classList.remove('show');

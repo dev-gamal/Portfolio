@@ -39,7 +39,7 @@ html {
 
 body {
     font-family: var(--font-main);
-    background-attachment: var(--bg-color);
+    background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
     transition: var(--transition-fast);
@@ -240,6 +240,7 @@ header {
     width: 320px;
     height: 320px;
     object-fit: cover;
+    object-position: center top;
     border-radius: 50%;
     border: 8px solid var(--surface-color);
     box-shadow: var(--shadow);
