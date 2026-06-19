@@ -17,13 +17,14 @@
 }
 
 body.dark-theme {
-    --bg-color: #0f172a;
-    --surface-color: #1e293b;
-    --text-color: #f8fafc;
+    --bg-color: #0f151f;
+    --surface-color: #17202e;
+    --text-color: #ffffff;
     --text-muted: #94a3b8;
-    --primary-color: #60a5fa;
-    --primary-hover: #3b82f6;
-    --border-color: #334155;
+    --primary-color: #55e6a5;
+    --primary-hover: #3bc98b;
+    --accent-color: #55e6a5;
+    --border-color: #2d3748;
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
 }
 
@@ -96,6 +97,15 @@ ul {
 .btn-primary {
     background-color: var(--primary-color);
     color: #ffffff;
+}
+
+body.dark-theme .btn-primary {
+    color: #0f151f;
+    font-weight: bold;
+}
+
+body.dark-theme .btn-primary:hover {
+    color: #0f151f;
 }
 
 .btn-primary:hover {
@@ -246,6 +256,11 @@ header {
     box-shadow: var(--shadow);
 }
 
+body.dark-theme .hero-image img {
+    border: 6px solid var(--primary-color);
+    box-shadow: 0 0 20px rgba(85, 230, 165, 0.15);
+}
+
 .about-container {
     background-color: var(--surface-color);
     padding: 40px;
@@ -283,6 +298,11 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+body.dark-theme .skill-card i,
+body.dark-theme .contact-item i {
+    color: var(--primary-color);
 }
 
 .skill-item {
